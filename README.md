@@ -1,10 +1,12 @@
 # TaskFlow – Kanban Board with Dashboard
 
-TaskFlow is a React web application that helps users create, organize, and monitor tasks. Tasks are arranged in three columns: TO DO, DOING, and DONE. The Dashboard summarizes task information using cards and charts.
+## Project Description
+
+TaskFlow is a React web application that helps users create, organize, and monitor tasks. Tasks are arranged in three columns: TO DO, DOING, and DONE. Users can create, edit, delete, and move tasks. The Dashboard summarizes task information using cards and charts. All information is saved in Local Storage without a backend.
 
 ## Live Website
 
-https://nagr1.github.io/kanban-board/
+[Open TaskFlow](https://nagr1.github.io/kanban-board/)
 
 ## Project Features
 
@@ -28,7 +30,7 @@ https://nagr1.github.io/kanban-board/
 
 ### Kanban Board
 
-![Kanban Board](screenshots/kanban_board.png)
+![Kanban Board](screenshots/kaben_board.png)
 
 ### Dashboard
 
@@ -36,9 +38,9 @@ https://nagr1.github.io/kanban-board/
 
 ## Group Members
 
-- Nyein Chan Htet Naing (6726045)
-- Myat Phone Paye (6530258)
-- Lin Myat Thu (6722057)
+- Nyein Chan Htet Naing
+- Myat Phone Paye
+- Lin Myat Thu
 
 ## Basic Usage Instructions
 
@@ -68,3 +70,12 @@ Install the required packages:
 
 ```bash
 npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in the terminal.
