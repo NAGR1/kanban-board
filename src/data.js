@@ -1,7 +1,7 @@
 export const responsiblePersons = [
-  { id: 1, name: 'Member 1' },
-  { id: 2, name: 'Member 2' },
-  { id: 3, name: 'Member 3' },
+  { id: 6726045, name: 'Nyein Chan Htet Naing' },
+  { id: 6530258 , name: 'Myat Phone Paye' },
+  { id: 6722057, name: 'Lin Myat Thu' },
 ]
 
 export const defaultCategories = [

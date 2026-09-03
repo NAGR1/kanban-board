@@ -64,6 +64,7 @@ function TaskForm({
     const category = newCategory.trim()
 
     if (!category) {
+      setError('Please enter a category name.')
       return
     }
 
@@ -74,6 +75,7 @@ function TaskForm({
         ...current,
         category,
       }))
+
       setNewCategory('')
       setError('')
     } else {
@@ -85,8 +87,16 @@ function TaskForm({
     <div className="form-overlay">
       <form className="task-form" onSubmit={handleSubmit}>
         <div className="form-heading">
-          <h2>{editingTask ? 'Edit Task' : 'Create New Task'}</h2>
-          <button type="button" className="close-button" onClick={onCancel}>
+          <h2>
+            {editingTask ? 'Edit Task' : 'Create New Task'}
+          </h2>
+
+          <button
+            type="button"
+            className="close-button"
+            onClick={onCancel}
+            aria-label="Close form"
+          >
             ×
           </button>
         </div>
@@ -96,6 +106,7 @@ function TaskForm({
         <label>
           Title *
           <input
+            type="text"
             name="title"
             value={formData.title}
             onChange={handleChange}
@@ -133,12 +144,18 @@ function TaskForm({
 
         <div className="new-category">
           <input
+            type="text"
             value={newCategory}
-            onChange={(event) => setNewCategory(event.target.value)}
+            onChange={(event) =>
+              setNewCategory(event.target.value)
+            }
             placeholder="Add a new category"
           />
 
-          <button type="button" onClick={handleAddCategory}>
+          <button
+            type="button"
+            onClick={handleAddCategory}
+          >
             Add
           </button>
         </div>
@@ -160,6 +177,7 @@ function TaskForm({
               type="date"
               name="dueDate"
               value={formData.dueDate}
+              min={formData.startDate}
               onChange={handleChange}
             />
           </label>
@@ -174,11 +192,19 @@ function TaskForm({
           >
             <option value="">Select a person</option>
 
-            {responsiblePersons.map((person) => (
-              <option key={person.id} value={person.name}>
-                {person.name}
-              </option>
-            ))}
+            {responsiblePersons.map((person) => {
+              const personValue =
+                `${person.id} - ${person.name}`
+
+              return (
+                <option
+                  key={person.id}
+                  value={personValue}
+                >
+                  {person.id} - {person.name}
+                </option>
+              )
+            })}
           </select>
         </label>
 
@@ -196,11 +222,18 @@ function TaskForm({
         </label>
 
         <div className="form-actions">
-          <button type="button" className="cancel-button" onClick={onCancel}>
+          <button
+            type="button"
+            className="cancel-button"
+            onClick={onCancel}
+          >
             Cancel
           </button>
 
-          <button type="submit" className="save-button">
+          <button
+            type="submit"
+            className="save-button"
+          >
             {editingTask ? 'Save Changes' : 'Create Task'}
           </button>
         </div>
