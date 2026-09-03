@@ -28,17 +28,17 @@ https://nagr1.github.io/kanban-board/
 
 ### Kanban Board
 
-![Kanban Board](screenshots/kanban-board.png)
+![Kanban Board](screenshots/KanbanBoard.png)
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ## Group Members
 
-- Nyein Chan Htet Naing
-- Myat Phone Pyae
-- Lin Myat Thu
+- Nyein Chan Htet Naing (6726045)
+- Myat Phone Paye (6530258)
+- Lin Myat Thu (6722057)
 
 ## Basic Usage Instructions
 
