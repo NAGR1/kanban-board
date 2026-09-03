@@ -30,7 +30,7 @@ TaskFlow is a React web application that helps users create, organize, and monit
 
 ### Kanban Board
 
-![Kanban Board](screenshots/kanben_board.png)
+![Kanban Board](screenshots/kanban_board.png)
 
 ### Dashboard
 
