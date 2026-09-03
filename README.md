@@ -28,11 +28,11 @@ https://nagr1.github.io/kanban-board/
 
 ### Kanban Board
 
-![Kanban Board](screenshots/KanbanBoard.png)
+![Kanban Board](screenshots/kanban_board.png)
 
 ### Dashboard
 
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 ## Group Members
 
